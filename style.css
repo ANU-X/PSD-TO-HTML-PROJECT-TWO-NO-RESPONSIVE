@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stiky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  background: rgb(34, 36, 36);
+  color: white;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list_item li {
+  list-style: none;
+  padding: 0.6rem 1.5rem;
+}
+
+.list_item li:hover {
+  background: #353434;
+}
+
+.nav_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.updowon {
+  width: 40%;
+  cursor: pointer;
+  animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.search-box {
+  position: relative;
+  padding: 0.5rem 1.6rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.sear_box i {
+  position: absolute;
+  top: 39%;
+  color: #000;
+  right: 75px;
+  font-size: 13pt;
+  cursor: pointer;
+}
+/* ----------------------------------------------- */
+
+.hero_section {
+  background-image: url(/imgs/1\ \(5\).jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero_section::after {
+  content: "";
+  position: absolute;
+  background: #00000077;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+}
+
+.hero_text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  top: 25%;
+  left: 30%;
+}
+.hero_text h1 {
+  font-size: 40pt;
+}
+
+.typing {
+  margin: 2rem auto;
+  font-size: x-large;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typings 8s steps(43, end) 2s forwards, hideText 10s 30s forwards,
+    restar 5s infinite;
+}
+
+@keyframes typings {
+  from {
+    width: 0;
+  }
+  to {
+    width: 43ch;
+  }
+}
+
+@keyframes hideText {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes restar {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero_text p {
+  margin-top: 0.4rem;
+  margin-bottom: 4rem;
+}
+
+.hero_text button {
+  padding: 0.6rem 2rem;
+  font-size: 13pt;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+/* ------------------------------------------------------- */
+
+.container_one{
+    margin-top: 10rem;
+}
+
+.music_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.music_icon div h4{
+    margin-top: 1.5rem;
+}
+
+.music_icon div img{
+    background: red;
+    padding: 1.6rem;
+    border-radius: 22%;
+}
+
+/* ----------------------------------------------------- */
+.container_two{
+    margin-top: 14rem;
+}
+
+.singer_detlis{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    gap: 0;
+}
+
+.singer_detlis img{
+    width: 600px;
+    height: auto;
+}
+
+.singer_text{
+    width: 500px;
+    height: 65.5vh;
+    background: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.singer_text img{
+    width: 50px;
+    animation: updown 1s ease-in-out infinite
+    ;
+}
+.singer_text p{
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.singer_detlis button{
+    padding: 0.6rem 2.5rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.singer_detlis button:hover{
+    background: red;
+    border: 2px solid white;
+    color: white;
+}
+
+/* ---------------------------------------------- */
+
+.container_three{
+  margin-top: 14rem;
+  text-align: center;
+  color: #202020;
+}
+
+.Letest_new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 6rem;
+    text-align: center;
+}
+
+.Letest_new div img{
+    width: 100%;
+}
+.Letest_new div{
+    width: 30%;
+    height: 70vh;
+    margin: 2rem 1rem;
+    box-shadow: 1px 1px 8px rgb(128, 128, 128);   
+}
+
+.Letest_new div h3{
+  margin-top: 1.5rem;
+  font-size: 18pt;
+  color: #202020;
+}
+
+.Letest_new div h6{
+  margin: 0.5rem auto;
+  color: rgb(255, 49, 49);
+}
+
+.Letest_new div p{
+  color: #363636;
+  text-align:justify;
+  margin-left: 3.5rem;
+}
+
+/* ---------------------------------------------- */
+
+.container_four{
+  margin-top: 14rem;
+}
+
+.albums{
+    position: relative;
+  width: 100%;
+  height: 65vh;
+  background: #000;
+  background-size: cover;
+  background-position: center;
+}
+
+.albub_img{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.3rem;
+  left: 5.5%;
+}
+
+.albub_img_one{
+  top: 10%;
+  width: 650px;
+  height: 50vh;
+}
+
+.albub_img_tow img{
+  width: 100%;
+}
+
+.albub_img_one i{
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  color: white;
+  font-size: 20pt;
+  background: #ff0000ab;
+  padding: 5rem 10rem;
+  cursor: pointer;
+}
+
+.albub_img_tow{
+  position: absolute;
+  margin-right: -75rem;
+  width: 650px;
+  height: 48vh;
+}
+.albub_img_one img{
+  width: 100%;
+}
+/*-------------------------------------------------*/
+
+.container_five{
+  background: red;
+  text-align: center;
+}
+
+.container_five h3{
+  padding-top: 20px;
+  color: white;
+}
+
+.subscribe{
+  width: 100%;
+  height: 10vh;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe input{
+  width: 20rem;
+  padding: 0.5rem;
+}
+
+.subscribe button{
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.subscribe button:hover{
+  background: none;
+  border: 2px solid white;
+}
+/* ------------------------------------------------ */
+.footers{
+  width: 100%;
+  height: 75vh;
+  background: black;
+}
+
+.container_six{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.locat{
+  display: flex;
+}
+.phon{
+  display: flex;
+}
+.ema{
+  display: flex;
+}
+
+.contacs{
+  margin-top: 3%;
+}
+
+.contacs div{
+  margin: 2rem auto;
+  color: white;
+  font-size: large;
+}
+
+.contacs h2{
+  color: white;
+  font-size: 24pt;
+}
+
+.socal i{
+  gap: 1rem;
+  font-size: 16pt;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.Form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+}
+
+.Form h2{
+  color: white;
+  font-size: 24pt;
+}
+
+.Form input{
+  width: 20rem;
+  padding: 0.8rem 0.5rem;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  border: none;
+}
+
+.Form button{
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.Form textarea{
+  width: 20rem;
+  height: 12vh;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+}
+
+.f_div h2{
+  color: white;
+  font-size: 24pt;
+}
+
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box img{
+  width: 100%;
+  height: 100%;
+}
+
+.box div{
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+.box h4{
+  text-align: center;
+  font-size: larger;
+  margin-top: 2.4rem;
+}
+
+.reserv{
+  width: 100%;
+  text-align: center;
+  background: white;
+  height: 4vh;
+}
+.reserv h4{
+  margin: 11px;
+}
+
+.circle-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  position: fixed;
+  bottom: 60px;
+  right: 25px;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px black;
+}
+
